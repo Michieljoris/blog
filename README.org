@@ -18,14 +18,18 @@ Then:
 : bower install
 : bin/serve
 
-Open your browser at [[http://localhost:9100][localhost:9100]].
+Open your browser at http://localhost:9100/post/blog-manual.html
 
 Edit a post by clicking on it.
-
-After saving/deleting/updating refresh the page to see the new page. 
 
 Open the file at server/blog-config.js to configure the blog and restart the
 server. So kill the serve process and again =bin/serve=.
 
 The server needs to be restarted when changing recipes/config since bb-blog
 caches the recipes and configuration in memory.
+
+TODO:
+After saving/deleting/updating open [[http://localhost:9100][localhost:9100]] again, since you might be
+looking at an old page. Posts that change their published status or that are
+removed are not yet properly purged from the public www directory.
+

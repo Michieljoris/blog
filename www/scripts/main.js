@@ -258,7 +258,7 @@ renderClick.onValue(function(e) {
 var deleteClick = $("#delete-button").asEventStream("click");
 deleteClick.onValue(function(e) {
     log('delete');
-    var fileName = prompt('Delete post with title ?');
+    var fileName = prompt('Title post should be "post/title.html". Enter title ?');
     removeFile(fileName);
     // var request = new XMLHttpRequest();
     // log('save button clicked');
