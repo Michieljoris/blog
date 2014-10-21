@@ -4,6 +4,8 @@
 //module and passing different values. Any values not defined are taken from
 //this set of defaults
 module.exports = {
+    //used as meta title for any blog page
+    siteTitle: 'my siteTitle',
     paths: {
         //Base path to directory with source files for html-builder:
         base: 'build',
